@@ -28,28 +28,28 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Selection
 keymap.set(
-	"n",
-	"<leader>sb",
-	"v%",
-	{ desc = "Select block (Select everything between current character and matching closing)" }
+  "n",
+  "<leader>sb",
+  "v%",
+  { desc = "Select block (Select everything between current character and matching closing)" }
 )
 keymap.set(
-	"v",
-	"<leader>sb",
-	"%",
-	{ desc = "Select block (Select everything between current character and matching closing)" }
+  "v",
+  "<leader>sb",
+  "%",
+  { desc = "Select block (Select everything between current character and matching closing)" }
 )
 
 -- Clone line below
-vim.keymap.set("v", "<C-j>", ":t.<CR>", { desc = "Clone line below" })
-vim.keymap.set("n", "<C-j>", ":t.<CR>", { desc = "Clone line below" })
+--keymap.set("v", "<C-j>", ":t.<CR>", { desc = "Clone line below" })
+--keymap.set("n", "<C-j>", ":t.<CR>", { desc = "Clone line below" })
 
 -- Clone line above
 
-vim.keymap.set("n", "<C-k>", ":t.-1<CR>", { desc = "Clone line above" })
-vim.keymap.set("v", "<C-k>", ":t.-1<CR>", { desc = "Clone line above" })
+--keymap.set("n", "<C-k>", ":t.-1<CR>", { desc = "Clone line above" })
+--keymap.set("v", "<C-k>", ":t.-1<CR>", { desc = "Clone line above" })
 
 -- Move lines
 
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv'")
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv'")
+--keymap.set("v", "K", ":m '<-2<CR>gv=gv'")
+--keymap.set("v", "J", ":m '>+1<CR>gv=gv'")- Keymaps are automatically loaded on the VeryLazy event
